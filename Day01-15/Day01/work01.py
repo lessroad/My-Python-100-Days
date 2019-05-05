@@ -1,6 +1,5 @@
 import turtle
 
-print("测试海龟")
 turtle.pensize(14)
 turtle.pensize(3)
 turtle.pencolor('black')
