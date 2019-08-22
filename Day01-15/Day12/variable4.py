@@ -1,0 +1,22 @@
+"""
+-*- coding: utf-8 -*-
+Project    :Python-100-Days
+
+Name    :拆分长字符串
+
+Date    : 2019-08-22 13:56:10
+Author  : Younth Yang (8593009@qq.com)
+"""
+
+import re
+
+def main():
+    poem = '窗前明月光，疑是地上霜     。举头望明月，低头思故乡。'
+    sentence_list = re.split(r'[，。, .]', poem)
+    while '' in sentence_list:
+        sentence_list.remove('')
+    print(sentence_list)  # ['窗前明月光', '疑是地上霜', '举头望明月', '低头思故乡']
+
+
+if __name__ == '__main__': 
+    main()
