@@ -6,13 +6,15 @@
 """
 这是一个多行的注释
 """
-
-print("Hello World!")
-print("Hello","World", sep=",",end="!")
-print("Hello","World",sep=",",end="!\n")
-
-
 import this
+
+
+def main():
+	print('必须是Hello')
+	print('dddd')
+
+if __name__ == '__main__':
+	main()
 
 
 """
