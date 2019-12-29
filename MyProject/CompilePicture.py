@@ -40,11 +40,11 @@ def get_md5_movere(filepath):
             with open(r'E:\照片\md5.txt', 'r') as f:
                 if md5 not in f.read():
                     f = open(r'E:\照片\md5.txt', 'a')
-                    f.write(md5+r"%s\%s" % (i, p)+'\n')
+                    f.write(md5 + r" %s\%s" % (i, p)+'\n')
                     f.close()
                 else:
                     a = a+1
-                    shutil.move(r"%s\%s" % (i, p), ('E:\\重复照片\\'+md5))
+                    shutil.move(r"%s\%s" % (i, p), ('E:\\重复照片\\'+md5 + os.path.splitext(p)[1]))
 
             d = d+1
             print(d, a)
